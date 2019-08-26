@@ -8,11 +8,8 @@ class Dragon {
   }
 
   eat() {
-    if (this.eatCount === 0) {
-      this.eatCount = 1;
-    } else if (this.eatCount === 1){
-      this.eatCount = 2;
-    } else {
+    this.eatCount += 1;
+    if (this.eatCount > 2) {
       this.hungry = false;
     }
   }
